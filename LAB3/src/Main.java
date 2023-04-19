@@ -4,7 +4,7 @@ public class Main {
 
         //----------------------------------
         //<Dalībnieki>
-        //Edijs Bergs 11 grupa
+        //Edijs Bergs
         //Kristīne Berķe
         //Vadims Belovs
         //Jānis Kļaviņš
