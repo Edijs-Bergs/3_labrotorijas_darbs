@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snake</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="game-wrapper">
+    <header class="top-bar">
+      <h1 class="title">Snake</h1>
+      <div class="scoreboard">
+        <span>Score:</span>
+        <span id="score">0</span>
+        <span class="spacer"></span>
+        <button id="pauseBtn" class="btn" aria-label="Pause or resume game">Pause</button>
+        <button id="restartBtn" class="btn btn-primary" aria-label="Restart game">Restart</button>
+      </div>
+    </header>
+
+    <section class="board">
+      <canvas id="game" width="480" height="480" aria-label="Snake game" role="img"></canvas>
+      <div id="overlay" class="overlay hidden" aria-live="polite">
+        <div id="overlayText" class="overlay-text"></div>
+      </div>
+    </section>
+
+    <nav class="touch-controls">
+      <div class="row">
+        <button class="btn dir-btn" data-dir="up" aria-label="Move up">▲</button>
+      </div>
+      <div class="row">
+        <button class="btn dir-btn" data-dir="left" aria-label="Move left">◀</button>
+        <button class="btn dir-btn" data-dir="down" aria-label="Move down">▼</button>
+        <button class="btn dir-btn" data-dir="right" aria-label="Move right">▶</button>
+      </div>
+    </nav>
+
+    <footer class="help">
+      <p>
+        Use Arrow keys or WASD to move. Space: Pause/Resume. Enter: Restart.
+      </p>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+  <noscript>
+    This game requires JavaScript to run.
+  </noscript>
+</body>
+</html>
+
