@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake - HTML5 Canvas</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1 class="title" aria-label="Snake game">Snake</h1>
+        <div class="scores">
+          <div class="score" id="score" aria-live="polite">Score: 0</div>
+          <div class="score" id="highScore" aria-live="polite">Best: 0</div>
+        </div>
+      </header>
+
+      <section class="board-wrapper">
+        <canvas id="game" width="640" height="480" aria-label="Snake game board" role="img"></canvas>
+
+        <div id="overlay" class="overlay hidden" aria-hidden="true">
+          <div class="overlay-content">
+            <div class="overlay-title" id="overlayTitle">Paused</div>
+            <div class="overlay-subtitle" id="overlaySubtitle">Press Space or Tap Resume</div>
+            <button id="resumeBtn" class="btn primary">Resume</button>
+            <button id="restartBtn" class="btn">Restart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <div class="dpad" aria-label="Directional controls">
+          <button class="btn round" id="btnUp" aria-label="Up">▲</button>
+          <div class="row">
+            <button class="btn round" id="btnLeft" aria-label="Left">◀</button>
+            <button class="btn round" id="btnDown" aria-label="Down">▼</button>
+            <button class="btn round" id="btnRight" aria-label="Right">▶</button>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="pauseBtn" class="btn">Pause</button>
+          <button id="restartBtn2" class="btn">Restart</button>
+        </div>
+      </section>
+
+      <footer class="help">
+        <p>Use Arrow Keys or WASD. Press Space to pause/resume.</p>
+      </footer>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
+
